@@ -60,7 +60,11 @@
                 <button class="btn_order">Buyurtma berish</button>
               </div>
               <div class="col-12 col-md-6 my-2 d-flex align-items-center">
-                <img src="./Icons/play_vidio_icon.png" class="me-2 cursor_pointer play_icon" alt="" />
+                <img
+                  src="./Icons/play_vidio_icon.png"
+                  class="me-2 cursor_pointer play_icon"
+                  alt=""
+                />
                 <p class="">Mahsulot haqida</p>
               </div>
             </div>
@@ -147,9 +151,41 @@
           </div>
         </div> -->
         <div class="row">
-          <div class="col-12 col-md-5"></div>
-          <div class="col-12 col-md-5"></div>
-          <div class="col-12 col-md-2"></div>
+          <form class="form" action="">
+            <div class="row">
+              <div class="col-12 col-md-4 mt-2">
+                <p class="mb-2">Ismingizni kiriting</p>
+                <div class="input_backgraund">
+                  <label class="d-flex" for="name">
+                    <img src="./Icons/person_icon.png" alt="" />
+                    Ismingiz...
+                  </label>
+                  <input class="ps-1" id="name" type="text" />
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mt-2">
+                <p class="mb-2">Telefon raqamingiz</p>
+                <div class="input_backgraund">
+                  <label class="d-flex" for="phone">
+                    <img src="./Icons/Phone_icon.png" alt="" />
+                    +998
+                  </label>
+                  <input class="ps-1" id="phone" type="text" />
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mt-2">
+                <p class="mb-2">Mahsulot soni</p>
+                <div class="count_backgraund  d-flex align-items-center justify-content-between">
+                  <span onclick="" id="decrementBtn" class="btn_count_product px-3">-</span>
+                  <input type="text" class="count_product" id="count_product" name="counter" value="0" readonly id=""/>
+                  <span onclick="" id="incrementBtn" class="btn_count_product px-3">+</span>
+                 </div>
+              </div>
+              <col-12 class="col-md-3 mt-2">
+              <button class="order_btn">Buyurtma berish</button>
+            </col-12>
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -256,7 +292,7 @@
             </div>
 
             <div
-              class="d-flex align-items-center justify-content-between resultat_items resultat_itemstwo"
+              class="d-flex align-items-center resultat_items resultat_itemstwo"
             >
               <img src="./Icons/icon_oclick.png" alt="" />
               <div>
@@ -338,7 +374,7 @@
                 <label class="d-flex" for="name">
                   <img src="./Icons/person_icon.png" alt="" />
                   Ismingiz...
-                  </label>
+                </label>
                 <input class="ps-1" id="name" type="text" />
               </div>
             </div>
@@ -348,11 +384,11 @@
                 <label class="d-flex" for="phone">
                   <img src="./Icons/Phone_icon.png" alt="" />
                   +998
-                  </label>
+                </label>
                 <input class="ps-1" id="phone" type="text" />
               </div>
             </div>
-            <div class="col-12 col-md-4 d-flex align-items-center">
+            <div class="col-12 col-md-4">
               <!-- <p class="mb-2  hiddin ">Telefon raqamingiz</p>-->
               <button class="btn_order">Buyurtma berish</button>
             </div>
@@ -363,24 +399,67 @@
     <section class="about_company">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-6">
-            <h1 class="title">Kompaniya haqida</h1>
-            <p class="about_jenshen_text">
-              "Sunmee" kompaniyasi 2021-yildan boshlab uzoq sharq o’simligi
-              bo’lgan “Jenshen”ning ildizidan tayyorlangan ichimlikni ishlab
-              chiqarib, O’zbekiston bo’ylab yetkazib berishni yo’lga qo’ydi.
-              Kompaniyamiz Koreyaning "Chejun" ITD hamda Qizil Jenshen sharbati
-              MChJ korxonalari bilan hamkorlikda ishlaydi. "Sunmee" qizil
-              jenshen ildizi Janubiy Koreyada yetishtirilib O’zbekistonda
-              qadoqlanadi.
-            </p>
+          <div class="col-12 col-md-6 d-flex align-items-center">
+            <div>
+              <h1 class="title">Kompaniya haqida</h1>
+              <p class="about_jenshen_text">
+                "Sunmee" kompaniyasi 2021-yildan boshlab uzoq sharq o’simligi
+                bo’lgan “Jenshen”ning ildizidan tayyorlangan ichimlikni ishlab
+                chiqarib, O’zbekiston bo’ylab yetkazib berishni yo’lga qo’ydi.
+                Kompaniyamiz Koreyaning "Chejun" ITD hamda Qizil Jenshen
+                sharbati MChJ korxonalari bilan hamkorlikda ishlaydi. "Sunmee"
+                qizil jenshen ildizi Janubiy Koreyada yetishtirilib
+                O’zbekistonda qadoqlanadi.
+              </p>
+            </div>
           </div>
-          <div class="col-12 col-md-6">
-
+          <div class="col-12 col-md-6 mt-2">
+            <iframe
+              width="100%"
+              class=""
+              height="315"
+              src="https://www.youtube.com/embed/m3iOJnBGcOk"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
         <div class="row">
           <h1 class="title">Sertifikatlar</h1>
+        </div>
+        <div class="row">
+          <div
+            class="col-12 col-lg-2 d-flex align-items-center justify-content-center mt-4"
+          >
+            <h1 class="title_partners">Bizning hamkorlarimiz:</h1>
+          </div>
+          <div
+            class="col-6 col-md-3 col-lg-2 d-flex align-items-center justify-content-center mt-4"
+          >
+            <img class="" src="./Icons/Amirxonshou_logo.png" alt="" />
+          </div>
+          <div
+            class="col-6 col-md-3 col-lg-2 d-flex align-items-center justify-content-center mt-4"
+          >
+            <img class="" src="./Icons/logo_mening_yurtim.png" alt="" />
+          </div>
+          <div
+            class="col-6 col-md-3 col-lg-2 d-flex align-items-center justify-content-center mt-4"
+          >
+            <img class="" src="./Icons/logo_black_booknomy.png" alt="" />
+          </div>
+          <div
+            class="col-6 col-md-3 col-lg-2 d-flex align-items-center justify-content-center mt-4"
+          >
+            <img class="" src="./Icons/logo_good_club.png" alt="" />
+          </div>
+          <div
+            class="col-6 col-md-3 col-lg-2 d-flex align-items-center justify-content-center mt-4"
+          >
+            <img class="" src="./Icons/Goodbook_logo bl.png" alt="" />
+          </div>
         </div>
       </div>
     </section>
@@ -406,30 +485,76 @@
               ><img src="./Icons/icon_instagram.png" alt=""
             /></a>
           </div>
-          <div class="col-12 col-md-4"></div>
-          <div class="col-12 col-md-4"></div>
-          <div class="col-12 col-md-4"></div>
+          <div class="mt-3 col-12 col-md-4">
+            <iframe
+              class=""
+              width="100%"
+              height="300"
+              src="https://www.youtube.com/embed/iubo4EpMLsA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="mt-3 col-12 col-md-4">
+            <iframe
+              class=""
+              width="100%"
+              height="300"
+              src="https://www.youtube.com/embed/40EAxhdmac0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="mt-3 col-12 col-md-4">
+            <iframe
+              class=""
+              width="100%"
+              height="300"
+              src="https://www.youtube.com/embed/U5pNjFg8KuE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
         <div class="buy_howe mt-4 mb-2">
-          <h1 class="title">Mahsulotni sotib olish uchun</h1>
+          <h1 class="title mb-0">Mahsulotni sotib olish uchun</h1>
           <h1 class="setup3_text">3 ta qadam</h1>
-          <div class="row d-flex align-items-center justify-content-between ">
+          <div class="row d-flex align-items-center justify-content-between">
             <div class="col-12 col-md-3">
-              <img src="./Images/korean_jenshen_ildiz.png" class="w-100" alt="" />
+              <img
+                src="./Images/korean_jenshen_ildiz.png"
+                class="w-100"
+                alt=""
+              />
             </div>
-            <div class="col-12 col-md-9 ">
-              <div class="row ">
+            <div class="col-12 col-md-9">
+              <div class="row">
                 <div class="col-12 col-sm-12 col-md-4 setups px-0">
                   <h1>01</h1>
-                  <p>Ismi sharifingiz va telefon <br> raqamingizni qoldiring</p>
+                  <p>
+                    Ismi sharifingiz va telefon <br />
+                    raqamingizni qoldiring
+                  </p>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 setups px-0">
                   <h1>02</h1>
-                  <p>Tez orada siz bilan bizning <br> mutaxassislar bog’lanadi</p>
+                  <p>
+                    Tez orada siz bilan bizning <br />
+                    mutaxassislar bog’lanadi
+                  </p>
                 </div>
                 <div class="col-12 col-sm-12 col-md-4 setups px-0">
                   <h1>03</h1>
-                  <p>Buyurtma 24 soat ichida <br> o‘z manziliga yetkazib beriladi</p>
+                  <p>
+                    Buyurtma 24 soat ichida <br />
+                    o‘z manziliga yetkazib beriladi
+                  </p>
                 </div>
               </div>
             </div>
@@ -441,26 +566,31 @@
       <div class="container">
         <div class="row border_bottom pb-5">
           <div class="col-12 col-md-4 d-flex align-items-center lg-center">
-            <a class="footer_links" href="#">Biz haqimizda</a>
-            <a class="footer_links" href="#">Mahsulot narxi</a>
+            <a class="footer_links mx-2" href="#">Biz haqimizda</a>
+            <a class="footer_links mx-2" href="#">Mahsulot narxi</a>
           </div>
           <div class="col-12 col-md-4 d-flex align-items-center lg-center">
             <img src="./Images/logo.png" alt="" />
           </div>
           <div class="col-12 col-md-4 d-flex align-items-center lg-center">
-            
-            <a href="tel:+998712036363" class=""><img src="./Icons/Phone_icon.png" alt="" /></a>
-            <a href="tel:+998712036363" class="phone_number ms-2">71 203 63 63</a>
+            <a href="tel:+998712036363" class=""
+              ><img src="./Icons/Phone_icon.png" alt=""
+            /></a>
+            <a href="tel:+998712036363" class="phone_number ms-2"
+              >71 203 63 63</a
+            >
           </div>
         </div>
-        <div class="row">
-          <div class="col-12 col-md-4 d-flex align-items-center lg-center">
+        <div class="row mt-3">
+          <div class="mt-2 col-12 col-md-4 d-flex align-items-center lg-center">
             <p>Toshkent sh., Yakkasaroy tumani, Sabo ko'chasi 45</p>
           </div>
-          <div class="col-12 col-md-4 d-flex align-items-center lg-center">
-            <img src="./Images/logo.png" alt="" />
+          <div class="mt-2 col-12 col-md-4 d-flex align-items-center lg-center">
+            <img class="mx-2" src="./Icons/facebook_icon_solid.png" alt="" />
+            <img class="mx-2" src="./Icons/instagram_icon_solid.png" alt="" />
+            <img class="mx-2" src="./Icons/telegram_icon_solid.png" alt="" />
           </div>
-          <div class="col-12 col-md-4 d-flex align-items-center lg-center">
+          <div class="mt-2 col-12 col-md-4 d-flex align-items-center lg-center">
             2023 Copyright: Sunmee.uz
           </div>
         </div>

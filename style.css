@@ -130,7 +130,8 @@ header {
     outline: none;
 }
 .hiddin{
-
+/* visibility: hidden;
+display: inline-block !important; */
 }
 @keyframes animation_discount {
     0% {
@@ -215,8 +216,18 @@ header {
 .resultat_items img {
     margin-left: 16px !important;
 }
-
+.resultat_itemstwo{
+    text-align: end !important;
+}
+.title_partners{
+    font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 32px;
+}
 .resultat_itemstwo img {
+
     margin-right: 16px !important;
 }
 
@@ -418,7 +429,7 @@ header {
     padding: 18px;
     border-radius: 8px;
     display: flex;
-}
+ }
 
 .input_backgraund input {
     background-color: transparent;
@@ -488,6 +499,9 @@ footer {
 .cursor_pointer {
     cursor: pointer;
 }
+.setups{
+    border-top: 1px solid rgba(123, 116, 111, 0.6);
+}
 
 .setups p {
     font-family: 'Inter';
@@ -498,3 +512,33 @@ footer {
     letter-spacing: -0.3px;
     color: #23170F;
 }
+.count_backgraund{
+    width: 202px;
+    background-color: #F8F8F8 !important;
+    padding: 18px;
+    border-radius: 8px;
+}
+.btn_count_product{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 22px !important;
+    color: #7B746F;
+    font-weight: bold;
+}
+.count_product{
+    width: 30px;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    min-height: 26px !important;
+}
+.order_btn{
+    width: 100%;
+height: 60px;
+left: 175px;
+top: 1241px;
+
+background: #FFBA51;
+border-radius: 4px;
+border: 0;}

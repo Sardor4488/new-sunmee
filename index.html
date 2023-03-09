@@ -14,6 +14,20 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <div class="shadow" id="shadow"></div>
+    <div class="md_nav_x" id="md_nav_x">
+      <div class="text-end">
+        <img id="md_x" onclick="hidden()" src="./Icons/x_icon.svg" alt="">
+      </div>
+      <ul class=" align-items-center header_ul ">
+        <li><a href="#">Biz haqimizda</a></li>
+        <li><a href="#">Jenshen haqida</a></li>
+        <li><a href="#">Faktlar</a></li>
+        <li><a href="#">Mahsulot narxlari</a></li>
+        <li><a href="#">Aloqa</a></li>
+      </ul>
+      <button class="btn_order ">Buyurtma berish</button>
+    </div>
     <header>
       <div
         class="container d-flex justify-content-between align-items-center md_d_flex"
@@ -28,10 +42,15 @@
             <li><a href="#">Aloqa</a></li>
           </ul>
         </div>
-        <img src="./Icons/bars_icon.png" class="bar_icon" alt="" />
+        <img onclick="unHidden()" id="md_nav_bar" src="./Icons/bars_icon.png" class="bar_icon" alt="" />
         <button class="btn_order md_none">Buyurtma berish</button>
       </div>
-    </header>
+
+
+    </div>
+    
+  </header>
+  
     <section class="main_section">
       <div class="container">
         <div class="row d-flex align-items-center">
@@ -176,12 +195,12 @@
               <div class="col-12 col-md-4 mt-2">
                 <p class="mb-2">Mahsulot soni</p>
                 <div class="count_backgraund  d-flex align-items-center justify-content-between">
-                  <span onclick="" id="decrementBtn" class="btn_count_product px-3">-</span>
+                  <span onclick="" id="decrementBtn" class="btn_count_product d-flex align-items-center px-3">-</span>
                   <input type="text" class="count_product" id="count_product" name="counter" value="0" readonly id=""/>
-                  <span onclick="" id="incrementBtn" class="btn_count_product px-3">+</span>
+                  <span onclick="" id="incrementBtn" class="btn_count_product d-flex align-items-center px-3">+</span>
                  </div>
               </div>
-              <col-12 class="col-md-3 mt-2">
+              <col-12 class="col-md-3 mt-3">
               <button class="order_btn">Buyurtma berish</button>
             </col-12>
             </div>
@@ -388,9 +407,9 @@
                 <input class="ps-1" id="phone" type="text" />
               </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 d-flex align-items-center">
               <!-- <p class="mb-2  hiddin ">Telefon raqamingiz</p>-->
-              <button class="btn_order">Buyurtma berish</button>
+              <button class="btn_order mt-4">Buyurtma berish</button>
             </div>
           </div>
         </form>

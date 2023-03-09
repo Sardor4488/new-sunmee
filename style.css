@@ -283,7 +283,88 @@ line-height: 32px;
     /* Black 60% */
     color: rgba(43, 42, 41, 0.6);
 }
-
+.md_nav_x{
+    width: 200px;
+    background-color: #7B746F;
+    height: 100%;
+    position: absolute;
+    padding: 15px;
+    z-index: 4;
+     right: 0 !important;
+    display: none;
+ }
+.block_nav{
+    animation-name:md_nav_animation_block ;
+    animation-duration: 0.5s;
+ 
+}
+.none_nav{
+    position: absolute;
+    animation-name:md_nav_animation_none ;
+    animation-duration: 0.5s;
+  }
+.md_nav_x button{
+    width: 170px !important;
+    margin-top: 10px;
+}
+.shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #1515158b;
+    z-index: 3;
+    display: none;
+}
+#md_x{
+   
+}
+.md_nav_x ul{
+    padding-left: 10px !important;
+}
+.md_nav ul li{
+    margin: 17px 0 !important;
+    margin-top: 15px !important;
+}
+.md_nav_x img{
+    width: 25px;
+    margin-bottom: 20px;
+}
+@keyframes md_nav_animation_block {
+    0%{
+        right: -450px;
+    }
+    100%{
+        right: 0px;
+    }
+}
+@keyframes md_nav_animation_none {
+    0%{
+        right: -450px;
+    }
+    100%{
+        right: 0px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .md_none {
+        display: none !important;
+    }
+    
+}
+@media only screen and (min-width: 1200px) {
+    .bar_icon {
+        display: block !important;
+        cursor: pointer;
+    }
+    .bar_icon {
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 1200px) {
+.header_ul  li {
+    margin-left: 10px !important;
+}
+}
 @media only screen and (max-width: 767px) {
     .img_jenshen {
         width: 311px !important;
@@ -306,9 +387,7 @@ line-height: 32px;
         right: 0px !important;
     }
 
-    .md_none {
-        display: none !important;
-    }
+    
 
     .title_large {
         font-size: 48px !important;
@@ -321,10 +400,7 @@ line-height: 32px;
         justify-content: space-between;
     }
 
-    .bar_icon {
-        display: block !important;
-        cursor: pointer;
-    }
+    
 
     .title {
         font-family: 'SF Pro Display';
@@ -390,9 +466,7 @@ line-height: 32px;
         justify-content: center;
     }
 
-    .bar_icon {
-        display: none !important;
-    }
+   
 }
 
 .benefit_count {
@@ -517,6 +591,9 @@ footer {
     background-color: #F8F8F8 !important;
     padding: 18px;
     border-radius: 8px;
+}
+.count_backgraund span{
+    height: 25px !important;
 }
 .btn_count_product{
     background-color: transparent;

@@ -129,10 +129,12 @@ header {
     display: flex;
     outline: none;
 }
-.hiddin{
-/* visibility: hidden;
+
+.hiddin {
+    /* visibility: hidden;
 display: inline-block !important; */
 }
+
 @keyframes animation_discount {
     0% {
         left: -1000px;
@@ -144,6 +146,8 @@ display: inline-block !important; */
 
     100% {
         right: -1600px;
+        left: -1000px;
+
     }
 }
 
@@ -152,7 +156,7 @@ display: inline-block !important; */
 }
 
 .card_sale {
-    width: 535px;
+    width: 100%;
     height: 115px;
     background: #E78F0C;
     border-radius: 12px;
@@ -194,8 +198,8 @@ display: inline-block !important; */
 }
 
 .card_price {
-    width: 535px;
-    height: 115px;
+    width: 100%;
+    height: 100% !important;
     background: #FFFFFF;
     border: 3px solid #F6F6F8;
     border-radius: 12px;
@@ -216,16 +220,19 @@ display: inline-block !important; */
 .resultat_items img {
     margin-left: 16px !important;
 }
-.resultat_itemstwo{
+
+.resultat_itemstwo {
     text-align: end !important;
 }
-.title_partners{
+
+.title_partners {
     font-family: 'SF Pro Display';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 32px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
 }
+
 .resultat_itemstwo img {
 
     margin-right: 16px !important;
@@ -350,6 +357,12 @@ line-height: 32px;
         display: none !important;
     }
     
+    .old_price{
+        font-size: 30px !important;
+    }
+    .sale_percentage{
+        /* font-size: 16px !important; */
+    }
 }
 @media only screen and (min-width: 1200px) {
     .bar_icon {
@@ -366,11 +379,38 @@ line-height: 32px;
 }
 }
 @media only screen and (max-width: 767px) {
+    .ellips{
+        position: relative;
+        top: -15px !important;
+        left: 44px !important;
+    }
     .img_jenshen {
         width: 311px !important;
         height: 265px !important;
     }
+.sale_percentage{
+    text-align: start !important;
+}
+    .card_sale {
+        height: 130px !important;
+    }
+    .old_price {
+        text-decoration-line: line-through;
 
+    }
+    .new_price,
+    .old_price {
+        font-family: 'SF Pro Display';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 45px;
+/* identical to box height, or 107% */
+
+letter-spacing: -0.02em;
+
+color: #7B746F;
+    }
     .img_jenshen_mini1 {
         width: 164px;
         height: 104px;
@@ -459,13 +499,28 @@ line-height: 32px;
         font-size: 12.5564px !important;
         line-height: 16px !important;
     }
+    .md_old_price_d_none{
+        display: block !important;
+    }
+    .card_price_lg_block{
+        display: none !important;
+    }
+    .icon_checkbox_icon{
+        margin-top: 25px ;
+        margin-left: 20px !important;
+    }
 }
 
 @media only screen and (min-width: 767px) {
     .lg-center {
         justify-content: center;
     }
-
+    .md_old_price_d_none{
+        display: none !important;
+    }
+    .card_price_lg_block{
+        display: block !important;
+    }
    
 }
 
@@ -503,7 +558,7 @@ line-height: 32px;
     padding: 18px;
     border-radius: 8px;
     display: flex;
- }
+}
 
 .input_backgraund input {
     background-color: transparent;
@@ -537,6 +592,7 @@ line-height: 32px;
 footer {
     background-color: #F8F8F8;
 }
+
 .footer_links {
     font-family: 'Inter';
     font-style: normal;
@@ -547,6 +603,7 @@ footer {
     letter-spacing: -0.2px;
     color: #23170F;
 }
+
 .phone_number {
     font-family: 'Inter';
     font-style: normal;
@@ -571,9 +628,13 @@ footer {
 }
 
 .cursor_pointer {
-    cursor: pointer;
+    cursor: pointer !important;
 }
-.setups{
+.ellips{
+    position: relative;
+    top: -15px !important;
+}
+.setups {
     border-top: 1px solid rgba(123, 116, 111, 0.6);
 }
 
@@ -586,7 +647,8 @@ footer {
     letter-spacing: -0.3px;
     color: #23170F;
 }
-.count_backgraund{
+
+.count_backgraund {
     width: 202px;
     background-color: #F8F8F8 !important;
     padding: 18px;
@@ -603,19 +665,22 @@ footer {
     color: #7B746F;
     font-weight: bold;
 }
-.count_product{
+
+.count_product {
     width: 30px;
     background-color: transparent;
     border: 0;
     outline: none;
     min-height: 26px !important;
 }
-.order_btn{
-    width: 100%;
-height: 60px;
-left: 175px;
-top: 1241px;
 
-background: #FFBA51;
-border-radius: 4px;
-border: 0;}
+.order_btn {
+    width: 100%;
+    height: 60px;
+    left: 175px;
+    top: 1241px;
+
+    background: #FFBA51;
+    border-radius: 4px;
+    border: 0;
+}

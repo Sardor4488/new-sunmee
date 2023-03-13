@@ -177,6 +177,7 @@ display: inline-block !important; */
     line-height: 45px;
     letter-spacing: -0.05em;
     color: #FFFFFF;
+    padding-left: 55px;
 }
 
 .price_currency {
